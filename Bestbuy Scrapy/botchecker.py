@@ -26,7 +26,7 @@ def main():
         body = browser.find_element_by_xpath('/html/body/div[3]/main/div[2]/div[3]/div[2]/div/div/div[6]/div[1]/div/div/div/button')
         
 
-        if (body.text != "Add to Cart"):
+        if (body.text == "Add to Cart"):
             response = webhook.execute()
             sleep(5)
             
