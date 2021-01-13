@@ -24,10 +24,8 @@ def main():
     while True:
         
         browser.get(url) #load web page
-        #body = browser.find_element_by_xpath('/html/body/div[3]/main/div[2]/div[3]/div[2]/div/div/div[6]/div[1]/div/div/div/button')
-        body = browser.find_element_by_xpath("//button[contains(text(),'Sold Out')]")#locate the button to add to cart using the relative xpath
+        body = browser.find_element_by_class_name("fulfillment-add-to-cart-button")#locate the button to add to cart using the class name 
         
-
         if (body.text == "Add to Cart"):#if the button says add to cart notify right away
             response = webhook.execute() #send discord notification
             #sleep(5) #wait to check if it is still in stock
