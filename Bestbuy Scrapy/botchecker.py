@@ -23,7 +23,7 @@ webhook = DiscordWebhook(url='https://discord.com/api/webhooks/79170822232617779
 
 #webhook for failed discord notification
 fail_webhook = DiscordWebhook(url="https://discord.com/api/webhooks/791708222326177793/_WwP0u2Yc8Qxi6LG5ZEFk_qQ89Ocsn9dkXibrOjAnpbq1fr8EuQELJPzcBnyMdBvfPiM",
-								content="Failed to detect button") 
+								content="<@&794330080553599017> Failed to detect button") 
 
 
 def element(): #this is the function to detect if element is on webpage
