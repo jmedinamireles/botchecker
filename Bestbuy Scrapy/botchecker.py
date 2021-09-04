@@ -12,14 +12,13 @@ from discord_webhook import DiscordWebhook
 
 
 #this is for the setup of the website to be configured and scraped
-url = 'https://www.bestbuy.com/site/amd-ryzen-9-5900x-4th-gen-12-core-24-threads-unlocked-desktop-processor-without-cooler/6438942.p?skuId=6438942'
+url ='https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440'
 browser = webdriver.Chrome()
 
 #webhook for the discord notification system
 webhook = DiscordWebhook(url='https://discord.com/api/webhooks/791708222326177793/_WwP0u2Yc8Qxi6LG5ZEFk_qQ89Ocsn9dkXibrOjAnpbq1fr8EuQELJPzcBnyMdBvfPiM',
 								content="<@&794330080553599017> 5900x is available " +
-								"https://www.bestbuy.com/site/amd-ryzen-9-5900x-4th-gen-12"+
-								"-core-24-threads-unlocked-desktop-processor-without-cooler/6438942.p?skuId=6438942") 
+								"https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440") 
 
 #webhook for failed discord notification
 fail_webhook = DiscordWebhook(url="https://discord.com/api/webhooks/791708222326177793/_WwP0u2Yc8Qxi6LG5ZEFk_qQ89Ocsn9dkXibrOjAnpbq1fr8EuQELJPzcBnyMdBvfPiM",
